@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>As-Sahaba Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#10B981",
+            secondary: "#065F46",
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    header.shrink {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+    }
+
+    .lola {
+      border-bottom-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+
+    .lola.shrink {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+  <header id="main-header"
+    class="bg-primary border lola text-white py-8 shadow-md transition-all duration-300 ease-in-out fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto px-4">
+      <h1 class="text-xl font-bold text-center">প্রজেক্ট: যাকাত সংগ্রহ-১৪৪৫</h1>
+    </div>
+  </header>
+
+  <main class="pt-32 py-8 px-4">
+    <div class="max-w-screen-lg mx-auto">
+      <!-- Intro Section -->
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-xl font-bold text-secondary mb-4">একটি মহৎ উদ্যোগ</h2>
+        <p class="text-center leading-relaxed">
+          সকল প্রশংসা একমাত্র মহান আল্লাহ সুবহানাহুয়া তা'য়ালার জন্য এবং হাজারো দরুদ ও সালাম প্রিয় নবী
+          হজরত মুস্তফা মুহাম্মাদুর রাসুলুল্লাহর প্রতি। আল'হামদুলিল্লাহ, আজ থেকে শুরু হলো আস-সাহাবা
+          ফাউন্ডেশন কর্তৃক পরিচালিত "প্রজেক্ট: যাকাত সংগ্রহ-১৪৪৫-হি."
+        </p>
+      </section>
+
+      <!-- Account Details Section -->
+      <section class="bg-white rounded-lg shadow-md p-6 mb-8">
+        <h2 class="text-xl font-bold text-secondary mb-4">যাকাত পাঠানোর ঠিকানা:</h2>
+        <ul class="text-sm space-y-2">
+          <li><strong>নগদ:</strong> 01715464146</li>
+          <li><strong>রকেট:</strong> 01715464146-5</li>
+          <li><strong>ব্যাংক একাউন্ট:</strong> Islami Bank Bangladesh</li>
+          <li><strong>Ac/Name:</strong> Md. Mahbub Rafid Labib</li>
+          <li><strong>Ac/No:</strong> 20503330201162209</li>
+          <li><strong>Brunch:</strong> Dhap, Rangpur</li>
+          <li><strong>Routing No:</strong> 125850522</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-lg font-bold text-secondary mb-4">যোগাযোগ:</h2>
+        <p>
+          সার্বিক শারয়ী তত্ত্বাবধানের দায়িত্বে আছেন বিশিষ্ট আলেম, মাওলানা তানজিল আরেফিন আদনান
+          (হাফিজাহুল্লাহ্)। যেকোনো প্রয়োজনে যোগাযোগ করুন: <a href="tel:01715464146"
+            class="text-primary font-bold hover:underline">01715464146</a>
+
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-secondary text-white py-4">
+    <div class="container mx-auto text-center text-sm">
+      © ২০২৪ আস-সাহাবা ফাউন্ডেশন। সর্বস্বত্ব সংরক্ষিত।
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById("main-header");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        header.classList.add("shrink");
+      } else {
+        header.classList.remove("shrink");
+      }
+    });
+  </script>
+</body>
+
+</html>
